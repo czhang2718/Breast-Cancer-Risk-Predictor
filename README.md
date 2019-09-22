@@ -1,2 +1,2 @@
-# what is this
+# generic repo
 I need tech support.
