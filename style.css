@@ -1,0 +1,165 @@
+
+  /* *{
+    box-sizing: border-box;
+  } */
+
+    body {
+      font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      margin: 0;
+    }
+
+    /* Style the header */
+    .header {
+      padding: 80px;
+      text-align: center;
+      background: #000000 url(https://2rdnmg1qbg403gumla1v9i2h-wpengine.netdna-ssl.com/wp-content/uploads/sites/3/2014/02/186136773-14-breast-cancer-questions-350x350.jpg);
+      background-size: contain;
+      opacity: .7;
+      color: black;
+    }
+
+    /* Increase the font size of the h1 element */
+    .header h1 {
+      font-size: 40px;
+    }
+
+
+    #ul_nav{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li{
+      list-style: none;
+    }
+
+    #bullet{
+      list-style-type:disc;
+    }
+
+
+    .li_nav{
+      float: left;
+    }
+
+    .li_nav a{
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    .li_nav a:hover{
+      background-color: #A8A8A8;  }
+
+    a.current{
+      background-color: #A8A8A8;
+    }
+
+    .main {
+      margin: 30px auto;
+      width: 60%;
+        }
+
+    .container {
+      width: 60%;
+      margin: 30px auto;
+      overflow: auto;
+    }
+
+    .specification-line {
+      fill:none; stroke: #CD5C5C; stroke-opacity: .8; stroke-width: 3px; shape-rendering: auto;
+    }
+
+    .spec-line2{
+      fill:none; stroke: #DAA520; stroke-opacity: .8; stroke-width: 3px; shape-rendering: auto;
+    }
+
+    .spec-line3{
+      fill:none; stroke: #ADD8E6; stroke-opacity: .8; stroke-width: 3px; shape-rendering: auto;
+    }
+
+    #results{
+      border-style: double;
+      border-color: #8f8e78;
+      border-width: thick;
+    }
+
+    .legend{
+      position: absolute; left: 0;
+    }
+
+    .pull-left{float: left;}
+
+    #container_head{
+      background: #8f8e78;
+      color:white;
+      padding: 10px 10px;
+      overflow: auto;
+      font_size: 18px;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 10px;
+      text-align: center;
+      background: #ddd;
+    }
+
+    #inner{
+      /* background:#f5f2f2; */
+      /* border-style: double;
+      border-color: #8f8e78;
+      border-width: thick; */
+      /* text-align: center; */
+
+    }
+
+    .questionForm{
+      background: #f5f2f2;
+    }
+    .questionForm2{
+      background: #f5f2f2;
+    }
+
+    /* doesn't work */
+    #value{
+      /* display: inline-block; */
+      font_size: 18px;
+      display: inline;
+    }
+
+    .button{
+      /* background-color: #555555;
+      color: white; */
+      padding: 4px 20px;
+      border-radius: 2px;
+      /* border: none; */
+      /* text-align: center; */
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 16px;
+    }
+
+    /* .img-text{
+      text-align: justify;
+    width: [width of img];
+    } */
+
+
+    @media screen and (max-width: 1000px){
+      .container {
+        width: 80%;
+      }
+      .main{
+        width: 80%;
+      }
+    }
+
+
+    }

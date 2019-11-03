@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>BC Risk Predictor</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script src="quiz.js"></script>
+      <div class="header">
+        <h1>Breast Cancer Risk Calculator</h1>
+        <p style= "font-size: 17px;">Calculate your risk in less than a minute.</p>
+      </div>
+
+      <ul id = "ul_nav">
+        <li class="li_nav"><a href="assessment.html">Calculator</a></li>
+        <li class="li_nav" class="current"><a href="about.html">About the Model</a></li>
+      </ul>
+
+      <div class="main" style="line-height: 1.8;">
+        <h2 style= "text-align: center;">About the Model</h2>
+        <p style="text-indent: 40 px"> <img src="Mammography.jpg" width="25%" height=auto style="float: right;"></p>About 1 in 8 U.S. women develop invasive breast cancer over their lifetime.
+          Mammograms allow for early detection of breast cancer and help determine which lifestyle changes can lower one&rsquo;s risk.
+          In addition, a woman&rsquo;s risk of breast cancer is an important factor in determining what preventive measures to take.
+          The purpose of this breast cancer risk calculator is to predict a woman&rsquo;s risk of breast cancer within one year.
+        <!-- <p>The Gail model is a popular model used to calculate a woman&rsquo;s risk of developing invasive breast cancer
+          within five years (JNCI 81:1879-1886, 1989) [link]. The model uses the Surveillance, Epidemiology and End Results (SEER) [link]
+          Program dataset of the US National Cancer Institute, gathered from women aged 35-74. However, the model does not make use of mammographic data even though it is intended for women undergoing screening mammograms..</p> -->
+        <p>This calculator&rsquo;s predictions are based on a logistic regression model developed by Barlow et al. (JNCI 98:1204-1214, 2006)
+          using data from the <a href="https://www.bcsc-research.org/">Breast Cancer Surveillance Consortium</a>. The model requires information about age group, breast density
+          (from the screening mammography), previous breast procedures, first-degree family history of breast cancer, and &ndash;
+          for post-menopausal women only &ndash; race/ethnicity, body mass index, age at birth of first child, current use of hormone therapy,
+          surgical menopause, and previous mammographic outcome. There are separate prediction models for premenopausal and postmenopausal women.</p>
+        <p><img src="ROC.png" width="50%" height=auto style="float: left;">The Barlow model has been evaluated using the receiver operating characteristic (ROC) curve.
+          The area under the ROC curve (AUC) is a commonly used statistical measure for evaluating and comparing prediction models.
+          A useless prediction model (i.e., a random guess) would have an AUC of 0.5. The AUC of the Barlow model is estimated to be
+          approximately .622 (for both pre- and post-menopausal women), which is significantly higher than 0.5.&nbsp;
+          <!-- <div class="img-text">
+            <img src="pre roc.png" width="50%" height=auto>
+            <p>AUC = 0.6221525</p>
+          </div>
+
+          <img src="post roc.png" width="50%" height=auto></p> -->
+        <!-- add picture? -->
+      </div>
+
+      <div class="footer">
+        <div>2019</div>
+        <div>Created by: Claire Zhang</div>
+      </div>
+  </body>
+</html>
